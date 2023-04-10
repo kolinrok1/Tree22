@@ -15,8 +15,7 @@ public class Main {
         testOne.add(humanFive);
 
         FamilyTree testTwo = new FamilyTree();
-
-        //  Проверка сериализации
+        
         String nameFile = "FamList";
         inOutSerialObject.saveFile(testOne,nameFile);
         testTwo = inOutSerialObject.loadFile(nameFile);

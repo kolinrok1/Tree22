@@ -38,24 +38,9 @@ public class Human implements Serializable {
         this.childrens = new ArrayList<>();
     }
 
-    public String getFirstName() {
-        return firstName;
-    }
 
     public String getLastname() {
         return lastname;
-    }
-
-    public String getDateOfBirth() {
-        return dateOfBirth;
-    }
-
-    public String getDateOfDeath() {
-        return dateOfDeath;
-    }
-
-    public int getId() {
-        return id;
     }
 
 
@@ -67,23 +52,7 @@ public class Human implements Serializable {
         return father;
     }
 
-    public List<Human> getChildrens() {
-        return childrens;
-    }
 
-    public String getGender() {
-        return gender;
-    }
-
-    private void setMather(Human mather) {
-        this.mather = mather;
-    }
-
-    private void setFather(Human father) {
-        this.father = father;
-    }
-
-    /**Добавить ребенка в лист детей у человека*/
     public void addChildren(Human human) {
 
         if(!childrens.contains(human)) {
