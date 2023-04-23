@@ -2,7 +2,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
-public class Human implements Serializable {
+public class Human implements Serializable, Comparable<Human> {
     private static int count = 1;
     private final int id;
     protected final String firstName;
@@ -96,5 +96,10 @@ public class Human implements Serializable {
     @Override
     public int hashCode() {
         return Objects.hash(id, firstName, lastname, dateOfBirth, dateOfDeath, gender);
+    }
+
+    @Override
+    public int compareTo(Human o) {
+        return 0;
     }
 }
